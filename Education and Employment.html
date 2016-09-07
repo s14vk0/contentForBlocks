@@ -1,0 +1,116 @@
+<style>
+  .xblock-render .textimagexblock-wrapper {
+    display: none;
+  }
+
+  .xblock-render .background {
+    width: auto !important;
+  }
+
+  .textimagexblock-wrapper img {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  .textimagexblock-wrapper a {
+    text-decoration: none;
+    background-color: orangered;
+    color: white !important;
+  }
+
+  .textimagexblock-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .textimagexblock-wrapper .background {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em;
+  }
+
+  .textimagexblock-wrapper .content {
+    position: fixed;
+    top: 25%;        
+    padding: 0;
+    height: 60%;
+    width: 72%;
+    left: 11%;
+    overflow: auto;
+  }
+
+  .textimagexblock-wrapper .header-text {
+    position: fixed;
+    top: 8%;
+    left: 11%;
+    width: 72%;
+    font-size: 54px !important;
+    font-weight: 100;
+    color: white !important;
+    margin: 1em 0;              
+    padding-left: 20px;
+  }
+
+  .textimagexblock-wrapper .content-text {
+    font-family: sans;
+    font-size: 1.2em !important;
+    line-height: 28px;
+    color: white !important;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .textimagexblock-wrapper ol {
+    margin-left: 4em !important;
+  }
+
+  .textimagexblock-wrapper li {
+    font-family: sans;
+    font-size: 1em;
+    line-height: 28px;
+    color: white;
+    text-align: left;
+    padding: 0 2em 2em 0;
+  }
+  /* Let's get this party started */
+  ::-webkit-scrollbar { width: 10px; }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.9);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+</style>
+<div class="textimagexblock-wrapper">
+  <div class="background" style="background-image: url('/static/background.jpg');">
+    <h1 class="header-text">
+      Education and Employment
+    </h1>
+    <div class="content">
+      <p class="content-text">
+        Conservatorio supports a non-profit foundation, Calicanto, through annual donations equivalent to 2% of the company's overhead costs, as well as periodic sponsorship of fundraising events. CAPTA is dedicated to providing job training and placement aimed at increasing local womens' access to jobs created by new developments. Women have been successfully placed in hotels, restaurants, as well as within Conservatorio's own office. Since 2007, 576 have graduated from the training and placement program.
+      </p>
+      <p class="content-text">
+        In addition to this employment program, Conservatorio is engaged with a local gang in order to provide education and employment opportunities for at risk individuals. This partnership was borne out of a need to address rising issues of petty crime and inter-gang conflicts that threatened the success of one of Conservatorio's developments. The Esperanza program allows gang members to participate in a 3-week intensive program that requires a commitment to abandon all violent gang activities. The program provides formal job training and placement in local businesses as well as seed funding for business start-ups and is the only program directly funded by Conservatorio. A successful bar/recording studio, a walking tour guide business, and a food delivery company have all resulted from this program.
+      </p>
+    </div>
+  </div>
+</div>

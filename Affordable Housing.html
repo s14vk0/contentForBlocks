@@ -1,0 +1,117 @@
+<style>
+  .xblock-render .textimagexblock-wrapper {
+    display: none;
+  }
+
+  .xblock-render .background {
+    width: auto !important;
+  }
+
+  .textimagexblock-wrapper img {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  .textimagexblock-wrapper a {
+    text-decoration: none;
+    background-color: orangered;
+    color: white !important;
+  }
+
+  .textimagexblock-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .textimagexblock-wrapper .background {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em;
+  }
+
+  .textimagexblock-wrapper .content {
+    position: fixed;
+    top: 25%;        
+    padding: 0;
+    height: 60%;
+    width: 72%;
+    left: 11%;
+    overflow: auto;
+  }
+
+  .textimagexblock-wrapper .header-text {
+    position: fixed;
+    top: 8%;
+    left: 11%;
+    width: 72%;
+    font-size: 54px !important;
+    font-weight: 100;
+    color: white !important;
+    margin: 1em 0;              
+    padding-left: 20px;
+  }
+
+  .textimagexblock-wrapper .content-text {
+    font-family: sans;
+    font-size: 1.2em !important;
+    line-height: 28px;
+    color: white !important;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .textimagexblock-wrapper ol {
+    margin-left: 4em !important;
+  }
+
+  .textimagexblock-wrapper li {
+    font-family: sans;
+    font-size: 1em;
+    line-height: 28px;
+    color: white;
+    text-align: left;
+    padding: 0 2em 2em 0;
+  }
+  /* Let's get this party started */
+  ::-webkit-scrollbar { width: 10px; }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.9);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+</style>
+ 
+<div class="textimagexblock-wrapper">
+  <div class="background" style="background-image: url('/static/background.jpg');">
+    <h1 class="header-text">
+      Affordable Housing
+    </h1>
+    <div class="content">
+      <p class="content-text">
+        Conservatorio has a self-imposed policy of developing one affordable housing unit for every luxury residential unit. It has recently finished its first affordable housing project, and has five additional lots in a neighboring district set aside for affordable housing. These projects will add 111 affordable units to the area. Housing units are slated for affordable ownership, which allows homeowners to participate in the property value growth. Units are valued at 45% of the market-rate which results in a mortgage payment of $200 a month. By selling or renting ground floor retail and some units at market rates if needed, they cross-subsidize the affordable units and break even on these projects.
+      </p>
+      <p class="content-text">
+        Anecdotally, one of the most difficult aspects of this program is reaching the intended beneficiaries. Mortgage banks have been reluctant to give loans to those who they consider riskier lenders. Most applicants have informal sector jobs, other outstanding debts, or monthly incomes that are simply too low - factors that automatically disqualify them from traditional bank mortgages. The result has been that in Conservatorio's most recent project, the beneficiaries were mostly low-middle class employees of Conservatorio or other people well known to the company. In order to expand the pool of potential beneficiaries, Conservatorio is negotiating an arrangement with the mortgage banks in which they (the company) act as guarantors for loans given to families who would otherwise not qualify. Although the lending requirements will be less exclusionary, familiarity with applicants will continue to play a role on the selection process, since knowing the beneficiaries well is a form of risk reduction.
+      </p>
+    </div>
+  </div>
+</div>
