@@ -1,19 +1,11 @@
 <style>
-  .xblock-render .textimagexblock-wrapper {
-    display: none;
-  }
-
-  .xblock-render .background {
-    width: auto !important;
-  }
-
+  
   .textimagexblock-wrapper img {
     display: block;
     width: 70%;
     height: auto;
     margin: 1em auto;
   }
-
   .textimagexblock-wrapper {
     position: fixed;
     top: 0;
@@ -23,7 +15,6 @@
     height: 100%;
     width: 100%;
   }
-
   .textimagexblock-wrapper .background {
     height: 100%;
     width: 100%;
@@ -31,8 +22,7 @@
     background-size: cover;
     padding: 4em;
   }
-
-  .textimagexblock-wrapper .content {
+  .conservatorio-long.textimagexblock-wrapper .textimagexblock-content {
     position: fixed;
     top: 25%;
     left: 14%;
@@ -41,8 +31,7 @@
     width: 72%;
     overflow: auto;
   }
-
-  .textimagexblock-wrapper .header-text {
+  .conservatorio-long.textimagexblock-wrapper .header-text {
     font-size: 36px;
     font-weight: 100;
     color: white !important;
@@ -50,8 +39,7 @@
     padding: 0;
     text-align: center;
   }
-
-  .textimagexblock-wrapper .content-text {
+  .conservatorio-long.textimagexblock-wrapper .content-text {
     font-family: sans;
     font-size: 18px;
     line-height: 28px;
@@ -60,12 +48,10 @@
     margin: 0;
     padding: 2em;
   }
-
-  .textimagexblock-wrapper ol {
+  .conservatorio-long.textimagexblock-wrapper ol {
     margin-left: 4em !important;
   }
-
-  .textimagexblock-wrapper li {
+  .conservatorio-long.textimagexblock-wrapper li {
     font-family: sans;
     font-size: 18px;
     line-height: 28px;
@@ -73,30 +59,44 @@
     text-align: left;
     padding: 0 2em 2em 0;
   }
-
   /* Let's get this party started */
-  ::-webkit-scrollbar { width: 10px; }
+  .conservatorio-long ::-webkit-scrollbar { width: 10px; }
   /* Track */
-  ::-webkit-scrollbar-track {
+  .conservatorio-long ::-webkit-scrollbar-track {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.3);
   }
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  .conservatorio-long ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.9);
   }
-  ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+  .conservatorio-long ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+  
+  /* studio view adjustments */
+  .xblock-render .conservatorio-long.textimagexblock-wrapper {
+    position: relative;
+  }
+  .xblock-render .conservatorio-long .textimagexblock-content {
+  	position: relative;
+    left: 0;
+    width:100%;
+    height: 400px;
+  }
+  .xblock-render .conservatorio-long .textimagexblock-wrapper ol {
+  	margin-left: 0;
+  }
+  
 </style>
- 
-<div class="textimagexblock-wrapper">
+
+<div class="textimagexblock-wrapper conservatorio-long">
   <div class="background" style="background-image: url('/static/bg-static-conserv-approach_2x.jpg');">
     <h1 class="header-text">
       Conservatorio's Long-term Approach
     </h1>
-    <div class="content">
+    <div class="textimagexblock-content">
       <img src="/static/graph-shortterm-longterm.png" alt="Graph long-term">
       <p class="content-text">
         Casco Viejo, like many other historic districts, has experienced the troughs and peaks of market and socioeconomic cycles (Figure 1a). In order to reduce future exposure to extreme market highs and lows, Conservatorio utilizes a nontraditional inclusionary long-term development model. In contrast, a traditional development approach for areas with undervalued real estate tends to produce the following market cycle (Figure 1b): 
