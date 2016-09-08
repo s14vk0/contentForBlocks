@@ -1,19 +1,11 @@
 <style>
-  .xblock-render .textimagexblock-wrapper {
-
-  }
-
-  .xblock-render .background {
-    width: auto !important;
-  }
-
+  
   .textimagexblock-wrapper img {
     display: block;
     width: 70%;
     height: auto;
     margin: 1em auto;
   }
-
   .textimagexblock-wrapper {
     position: fixed;
     top: 0;
@@ -23,88 +15,88 @@
     height: 100%;
     width: 100%;
   }
-
-  .textimagexblock-wrapper .background {
+  .conservatorio.textimagexblock-wrapper .background {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 4em;
   }
-
-  .textimagexblock-wrapper .content {
+  .conservatorio.textimagexblock-wrapper .textimagexblock-content {
     position: fixed;
-    top: 25%;        
+    top: 25%;
+    left: 14%;
     padding: 0;
     height: 60%;
     width: 72%;
-    left: 11%;
     overflow: auto;
   }
-
-  .textimagexblock-wrapper .header-text {
-    position: fixed;
-    top: 8%;
-    left: 11%;
-    width: 72%;
-    font-size: 54px !important;
+  .conservatorio.textimagexblock-wrapper .header-text {
+    font-size: 36px;
     font-weight: 100;
     color: white !important;
-    margin: 1em 0;              
-    padding-left: 20px;
+    margin: 1em 0;
+    padding: 0;
+    text-align: center;
   }
-
-  .textimagexblock-wrapper .content-text {
+  .conservatorio.textimagexblock-wrapper .content-text {
     font-family: sans;
-    font-size: 1.2em !important;
+    font-size: 18px;
     line-height: 28px;
     color: white !important;
     text-align: left;
     margin: 0;
-    padding: 20px;
-    padding-bottom: 0;
+    padding: 2em;
   }
-
-  .textimagexblock-wrapper .content-text.quote {
-    width: 72%;
-    margin: 2em auto;
-    font-style: italic;
-  }
-
-  .textimagexblock-wrapper ol {
+  .conservatorio.textimagexblock-wrapper ol {
     margin-left: 4em !important;
   }
-
-  .textimagexblock-wrapper li {
+  .conservatorio.textimagexblock-wrapper li {
     font-family: sans;
-    font-size: 1em;
+    font-size: 18px;
     line-height: 28px;
     color: white;
     text-align: left;
     padding: 0 2em 2em 0;
   }
   /* Let's get this party started */
-  ::-webkit-scrollbar { width: 10px; }
+  .conservatorio ::-webkit-scrollbar { width: 10px; }
   /* Track */
-  ::-webkit-scrollbar-track {
+  .conservatorio ::-webkit-scrollbar-track {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.3);
   }
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  .conservatorio ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.9);
   }
-  ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+  .conservatorio ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+  
+  /* studio view adjustments */
+  .xblock-render .conservatorio .textimagexblock-wrapper {
+    position: relative;
+  }
+  .xblock-render .conservatorio .textimagexblock-content {
+  	position: relative;
+    left: 0;
+    width:100%;
+    height: 400px;
+  }
+  .xblock-render .conservatorio .textimagexblock-wrapper ol {
+  	margin-left: 0;
+  }
+  
 </style>
-<div class="textimagexblock-wrapper">
+
+<div class="textimagexblock-wrapper conservatorio">
   <div class="background" style="background-image: url('/static/bg-static-conserv-approach_2x.jpg');">
     <h1 class="header-text">
       Conservatorio's Approach
     </h1>
-    <div class="content">
+    <div class="textimagexblock-content">
       <p class="content-text">
         Conservatorio is a small real estate firm operating within an historic downtown neighborhood in Panama City. Founded in 2004 by a Panamanian and an American, Conservatorio has grown to over 200 employees in the past 12 years with $39.8M in managed assets.
       </p>
