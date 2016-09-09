@@ -1,8 +1,4 @@
 <style>
-  .xblock-render .textimagexblock-wrapper {
-    display: none;
-  }
-
   .xblock-render .background {
     width: auto !important;
   }
@@ -20,7 +16,7 @@
     color: white !important;
   }
 
-  .textimagexblock-wrapper {
+  .shared-vision.textimagexblock-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +26,7 @@
     width: 100%;
   }
 
-  .textimagexblock-wrapper .background {
+  .shared-vision.textimagexblock-wrapper .background {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -38,7 +34,7 @@
     padding: 4em;
   }
 
-  .textimagexblock-wrapper .content {
+  .shared-vision.textimagexblock-wrapper .textimagexblock-content {
     position: fixed;
     top: 25%;        
     padding: 0;
@@ -48,7 +44,7 @@
     overflow: auto;
   }
 
-  .textimagexblock-wrapper .header-text {
+  .shared-vision.textimagexblock-wrapper .header-text {
     position: fixed;
     top: 8%;
     left: 11%;
@@ -60,7 +56,7 @@
     padding-left: 20px;
   }
 
-  .textimagexblock-wrapper .content-text {
+  .shared-vision.textimagexblock-wrapper .content-text {
     font-family: sans;
     font-size: 1.2em !important;
     line-height: 28px;
@@ -71,11 +67,11 @@
     padding-bottom: 0;
   }
 
-  .textimagexblock-wrapper ol {
+  .shared-vision.textimagexblock-wrapper ol {
     margin-left: 4em !important;
   }
 
-  .textimagexblock-wrapper li {
+  .shared-vision.textimagexblock-wrapper li {
     font-family: sans;
     font-size: 1em;
     line-height: 28px;
@@ -84,27 +80,43 @@
     padding: 0 2em 2em 0;
   }
   /* Let's get this party started */
-  ::-webkit-scrollbar { width: 10px; }
+  .shared-vision ::-webkit-scrollbar { width: 10px; }
   /* Track */
-  ::-webkit-scrollbar-track {
+  .shared-vision ::-webkit-scrollbar-track {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.3);
   }
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  .shared-vision ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.9);
   }
-  ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+  .shared-vision ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+
+    /* studio view adjustments */
+  .xblock-render .shared-vision.textimagexblock-wrapper,
+  .xblock-render .shared-vision.textimagexblock-wrapper .header-text {
+    position: relative;
+  }
+  .xblock-render .shared-vision .textimagexblock-content {
+    position: relative;
+    left: 0;
+    width:100%;
+    height: 400px;
+  }
+  .xblock-render .shared-vision .textimagexblock-wrapper ol {
+    margin-left: 0;
+  }
+  
 </style>
-<div class="textimagexblock-wrapper">
+<div class="textimagexblock-wrapper shared-vision">
   <div class="background" style="background-image: url('/static/background-blue.jpg');">
     <h1 class="header-text">
       A Shared Vision<sup>*</sup>
     </h1>
-    <div class="content">
+    <div class="textimagexblock-content">
       <p class="content-text">
         Founding members of Conservatorio saw a vast amount of <a href=#>potential</a> in the neighborhood prior to investing in the mid-2000s. However, there existed, and still exists, everyday challenges for <a href=#>community members</a> that inhibit proper access to amenities and services as well as employment opportunities. Development in the neighborhood threatens to exacerbate these challenges through the negative externalities associated with gentrification.
       </p>
