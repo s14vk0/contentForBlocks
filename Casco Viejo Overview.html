@@ -4,33 +4,29 @@
   }
 </script>  
 <style>
-  #viewOnMap {
+    #viewOnMap {
     text-decoration: underline;
     background: none;
-  }
-
-  .xblock-render .textimagexblock-wrapper {
-    display: none;
   }
 
   .xblock-render .background {
     width: auto !important;
   }
 
-  .textimagexblock-wrapper img {
+  .casco-viejo.textimagexblock-wrapper img {
     display: block;
     width: 70%;
     height: auto;
     margin: 1em auto;
   }
 
-  .textimagexblock-wrapper a {
+  .casco-viejo.textimagexblock-wrapper a {
     text-decoration: none;
     background-color: orangered;
     color: white !important;
   }
 
-  .textimagexblock-wrapper {
+  .casco-viejo.textimagexblock-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +36,7 @@
     width: 100%;
   }
 
-  .textimagexblock-wrapper .background {
+  .casco-viejo.textimagexblock-wrapper .background {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -48,7 +44,7 @@
     padding: 4em;
   }
 
-  .textimagexblock-wrapper .content {
+  .casco-viejo.textimagexblock-wrapper .textimagexblock-content {
     position: fixed;
     top: 25%;        
     padding: 0;
@@ -58,7 +54,7 @@
     overflow: auto;
   }
 
-  .textimagexblock-wrapper .header-text {
+  .casco-viejo.textimagexblock-wrapper .header-text {
     position: fixed;
     top: 8%;
     left: 11%;
@@ -70,7 +66,7 @@
     padding-left: 20px;
   }
 
-  .textimagexblock-wrapper .content-text {
+  .casco-viejo.textimagexblock-wrapper .content-text {
     font-family: sans;
     font-size: 1.2em !important;
     line-height: 28px;
@@ -81,11 +77,11 @@
     padding-bottom: 0;
   }
 
-  .textimagexblock-wrapper ol {
+  .casco-viejo.textimagexblock-wrapper ol {
     margin-left: 4em !important;
   }
 
-  .textimagexblock-wrapper li {
+  .casco-viejo.textimagexblock-wrapper li {
     font-family: sans;
     font-size: 1em;
     line-height: 28px;
@@ -94,27 +90,40 @@
     padding: 0 2em 2em 0;
   }
   /* Let's get this party started */
-  ::-webkit-scrollbar { width: 10px; }
+  .casco-viejo ::-webkit-scrollbar { width: 10px; }
   /* Track */
-  ::-webkit-scrollbar-track {
+  .casco-viejo ::-webkit-scrollbar-track {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.3);
   }
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  .casco-viejo ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0.9);
   }
-  ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+  .casco-viejo ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,255,255,0.4); }
+
+   /* studio view adjustments */
+  .xblock-render .casco-viejo.textimagexblock-wrapper,
+  .xblock-render .casco-viejo.textimagexblock-wrapper .header-text {
+    position: relative;
+  }
+  .xblock-render .casco-viejo .textimagexblock-content {
+    position: relative;
+    left: 0;
+    width:100%;
+    height: 400px;
+  }
+
 </style>
-<div class="textimagexblock-wrapper">
-  <div class="background" style="background-image: url('http://i.imgur.com/4jqdAQF.jpg');">
+<div class="textimagexblock-wrapper casco-viejo">
+  <div class="background" style="background-image: url('/static/bg-static-casco-overview_2x.jpg');">
     <h1 class="header-text">
       Casco Viejo Overview
     </h1>
-    <div class="content">
+    <div class="textimagexblock-content">
       <p class="content-text">
         The current socioeconomic, financial, and cultural state of the neighborhood in which Conservatorio operates has been influenced by both the local dynamics and the history of the entire region itself. These dynamics, in turn, inform the development and evolution of Conservatorio’s long term inclusive investment model.
       </p>
