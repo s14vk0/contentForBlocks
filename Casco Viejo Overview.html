@@ -1,16 +1,26 @@
 <script>
-  function requestMap() {              
-    parent.postMessage(JSON.stringify({action: 'openMap' }),'*'); 
+  function requestMap() {
+    parent.postMessage(JSON.stringify({action: 'openMap' }),'*');
   }
-</script>  
+  function requestXBlock(url) {
+        parent.postMessage(JSON.stringify({action: 'skipToLinkedContent',
+                                            data: {
+                                            url: url}}),'*');
+  }
+</script>
 <style>
     #viewOnMap {
     text-decoration: underline;
     background: none;
   }
-
+  
   .xblock-render .background {
     width: auto !important;
+    background-image: url('/static/bg-static-casco-overview_2x.jpg');
+  }
+  
+  .xblock-render .background-video {
+    display: none !important;
   }
 
   .casco-viejo.textimagexblock-wrapper img {
@@ -44,9 +54,17 @@
     padding: 4em;
   }
 
-  .casco-viejo.textimagexblock-wrapper .textimagexblock-content {
+  .casco-viejo.textimagexblock-wrapper .background-video {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     position: fixed;
-    top: 25%;        
+    object-fit: cover;
+  }
+
+  .casco-viejo.textimagexblock-wrapper .textimagexblock-content {
+    position: relative;
     padding: 0;
     height: 60%;
     width: 72%;
@@ -55,15 +73,15 @@
   }
 
   .casco-viejo.textimagexblock-wrapper .header-text {
-    position: fixed;
-    top: 8%;
+    position: relative;
     left: 11%;
     width: 72%;
     font-size: 54px !important;
     font-weight: 100;
     color: white !important;
-    margin: 1em 0;              
+    margin: 1em 0;
     padding-left: 20px;
+    margin: 20px 0;
   }
 
   .casco-viejo.textimagexblock-wrapper .content-text {
@@ -119,7 +137,9 @@
 
 </style>
 <div class="textimagexblock-wrapper casco-viejo">
-  <div class="background" style="background-image: url('/static/bg-static-casco-overview_2x.jpg');">
+  <video autoplay loop muted src="https://s3.amazonaws.com/mit-cre/Videos/casco+viejo.m4v" class="background-video">
+  </video>
+  <div class="background">
     <h1 class="header-text">
       Casco Viejo Overview
     </h1>
@@ -141,13 +161,13 @@
         <br/>Casco Area: <strong>0.3 km<sup>2</sup></strong>
       </p>
       <p class="content-text">
-        Panama City, the capital of Panama, is located on an isthmus joining the Caribbean Sea and the Pacific Ocean. Originally founded as an integral trading and transportaiton hub for Spain in the 17th century, Panama City has grown to become the largest city in Panama with a population over 1.4 million. Panama City's comparative advantage in geographic location lead to a <a href=#>tumultuous history</a> for the city and the country involving both South American and North American countries that eventually gave way to the country's economic and political independence at the end of the 20th century.
+        Panama City, the capital of Panama, is located on an isthmus joining the Caribbean Sea and the Pacific Ocean. Originally founded as an integral trading and transportation hub for Spain in the 17th century, Panama City has grown to become the largest city in Panama with a population over 1.4 million. Panama City's comparative advantage in geographic location lead to a <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@mit_cre_timeline+block@c4014d1e44fc4959911ce9d34199d572')">tumultuous history</a> for the city and the country involving both South American and North American countries that eventually gave way to the country's economic and political independence at the end of the 20th century.
       </p>
       <p class="content-text">
-        The many cultural influences Panama City experienced over the centuries contributed to a unique built environment reflecting a European and American milieu. Nowhere is this more apparent than in Casco Viejo. This 28 block neighborhood is a dense urban core of pedestrian-friendly streets, local shops, restaurants, and hotels. However, <a href=#>the current vibrancy masks a difficult past.</a> Casco endured numerous decades of decline as suburbanization took hold of Panama City in the 1920s. Development returned in the late 1990s when <a href=#>local tenant laws were relaxed and Casco Viejo was declared a UNESCO world heritage site.</a> More recently, however, there has been a contentious legal process relating to the treatment of in-place residents under the law.
+        The many cultural influences Panama City experienced over the centuries contributed to a unique built environment reflecting a European and American milieu. Nowhere is this more apparent than in Casco Viejo. This 28 block neighborhood is a dense urban core of pedestrian-friendly streets, local shops, restaurants, and hotels. However, <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@videojs+block@fb4e2160a4954c76adc69892b879bdcc')">the current vibrancy masks a difficult past.</a> Casco endured numerous decades of decline as suburbanization took hold of Panama City in the 1920s. Development returned in the late 1990s when <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@pdf+block@e666d0abc3254e4e94718ddf13174caa')">local tenant laws were relaxed and Casco Viejo was declared a UNESCO world heritage site.</a> More recently, however, there has been a contentious legal process relating to the treatment of in-place residents under the law.
       </p>
       <p class="content-text">
-        The return of development to the neighborhood coincided with large shifts in the <a href=#>demographics and socioeconomic</a> status of Casco Viejo's residents that continues to present day. In particular, population declined by nearly 70% from 10,282 in 1990 to 3,262 in 2010. This was accompanied by a sharp decline in the amount of rental units by 74%. Meanwhile, average monthly income in the district increased by nearly 80% between 1990 and 2010.
+        The return of development to the neighborhood coincided with large shifts in the <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@google-document+block@5aec939d65b34adeb0b6e2779c32edfb')">demographics and socioeconomic</a> status of Casco Viejo's residents that continues to present day. In particular, population declined by nearly 70% from 10,282 in 1990 to 3,262 in 2010. This was accompanied by a sharp decline in the amount of rental units by 74%. Meanwhile, average monthly income in the district increased by nearly 80% between 1990 and 2010.
       </p>
 
     </div>
