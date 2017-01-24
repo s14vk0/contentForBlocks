@@ -7,6 +7,22 @@
                                             data: {
                                             url: url}}),'*');
   }
+  function highlightTabOnLinkHover(url) {
+    parent.postMessage(JSON.stringify({
+        action: 'setHoveredItem',
+        data: {
+            url: url
+        }
+    }), '*');
+  }
+  function unhighlightTabOnMouseOut(url) {
+    parent.postMessage(JSON.stringify({
+        action: 'removeHoveredItem',
+        data: {
+            url: url
+        }
+    }), '*');
+  }
 </script>
 <style>
     #viewOnMap {
@@ -166,15 +182,14 @@
         <br/>Casco Area: <strong>0.3 km<sup>2</sup></strong>
       </p>
       <p class="content-text">
-        Panama City, the capital of Panama, is located on an isthmus joining the Caribbean Sea and the Pacific Ocean. Originally founded as an integral trading and transportation hub for Spain in the 17th century, Panama City has grown to become the largest city in Panama with a population over 1.4 million. Panama City's comparative advantage in geographic location lead to a <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@mit_cre_timeline+block@c4014d1e44fc4959911ce9d34199d572')">tumultuous history</a> for the city and the country involving both South American and North American countries that eventually gave way to the country's economic and political independence at the end of the 20th century.
+        Panama City, the capital of Panama, is located on an isthmus joining the Caribbean Sea and the Pacific Ocean. Originally founded as an integral trading and transportation hub for Spain in the 17th century, Panama City has grown to become the largest city in Panama with a population over 1.4 million. Panama City's comparative advantage in geographic location lead to a <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@mit_cre_timeline+block@8c801c4aebd849d58ab38621919e6696')" onmouseover="highlightTabOnLinkHover('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@mit_cre_timeline+block@8c801c4aebd849d58ab38621919e6696')" onmouseout="unhighlightTabOnMouseOut('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@mit_cre_timeline+block@8c801c4aebd849d58ab38621919e6696')">tumultuous history</a> for the city and the country involving both South American and North American countries that eventually gave way to the country's economic and political independence at the end of the 20th century.
       </p>
       <p class="content-text">
-        The many cultural influences Panama City experienced over the centuries contributed to a unique built environment reflecting a European and American milieu. Nowhere is this more apparent than in Casco Viejo. This 28 block neighborhood is a dense urban core of pedestrian-friendly streets, local shops, restaurants, and hotels. However, <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@videojs+block@fb4e2160a4954c76adc69892b879bdcc')">the current vibrancy masks a difficult past.</a> Casco endured numerous decades of decline as suburbanization took hold of Panama City in the 1920s. Development returned in the late 1990s when <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@pdf+block@e666d0abc3254e4e94718ddf13174caa')">local tenant laws were relaxed and Casco Viejo was declared a UNESCO world heritage site.</a> More recently, however, there has been a contentious legal process relating to the treatment of in-place residents under the law.
+        The many cultural influences Panama City experienced over the centuries contributed to a unique built environment reflecting a European and American milieu. Nowhere is this more apparent than in Casco Viejo. This 28 block neighborhood is a dense urban core of pedestrian-friendly streets, local shops, restaurants, and hotels. However, <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@videojs+block@fb4e2160a4954c76adc69892b879bdcc')" onmouseover="highlightTabOnLinkHover('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@videojs+block@fb4e2160a4954c76adc69892b879bdcc')" onmouseout="unhighlightTabOnMouseOut('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@videojs+block@fb4e2160a4954c76adc69892b879bdcc')">the current vibrancy masks a difficult past.</a> Casco endured numerous decades of decline as suburbanization took hold of Panama City in the 1920s. Development returned in the late 1990s when <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@pdf+block@e666d0abc3254e4e94718ddf13174caa')" onmouseover="highlightTabOnLinkHover('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@pdf+block@e666d0abc3254e4e94718ddf13174caa')" onmouseout="unhighlightTabOnMouseOut('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@pdf+block@e666d0abc3254e4e94718ddf13174caa')">local tenant laws were relaxed and Casco Viejo was declared a UNESCO world heritage site.</a> More recently, however, there has been a contentious legal process relating to the treatment of in-place residents under the law.
       </p>
       <p class="content-text">
-        The return of development to the neighborhood coincided with large shifts in the <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@google-document+block@5aec939d65b34adeb0b6e2779c32edfb')">demographics and socioeconomic</a> status of Casco Viejo's residents that continues to present day. In particular, population declined by nearly 70% from 10,282 in 1990 to 3,262 in 2010. This was accompanied by a sharp decline in the amount of rental units by 74%. Meanwhile, average monthly income in the district increased by nearly 80% between 1990 and 2010.
+        The return of development to the neighborhood coincided with large shifts in the <a href=# onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@google-document+block@5aec939d65b34adeb0b6e2779c32edfb')" onmouseover="highlightTabOnLinkHover('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@google-document+block@5aec939d65b34adeb0b6e2779c32edfb')" onmouseout="unhighlightTabOnMouseOut('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@google-document+block@5aec939d65b34adeb0b6e2779c32edfb')">demographics and socioeconomic</a> status of Casco Viejo's residents that continues to present day. In particular, population declined by nearly 70% from 10,282 in 1990 to 3,262 in 2010. This was accompanied by a sharp decline in the amount of rental units by 74%. Meanwhile, average monthly income in the district increased by nearly 80% between 1990 and 2010.
       </p>
-
     </div>
   </div>
 </div>
