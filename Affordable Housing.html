@@ -28,29 +28,31 @@
 
   .affordable-housing.textimagexblock-wrapper .background {
     height: 100%;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4em;
+    padding: 2em 4em;
   }
 
   .affordable-housing.textimagexblock-wrapper .textimagexblock-content {
     position: fixed;
     top: 25%;        
     padding: 0;
+    margin: 0 auto;
     height: 60%;
     width: 72%;
-    left: 11%;
     overflow: auto;
   }
 
   .affordable-housing.textimagexblock-wrapper .header-text {
     position: relative;
-    width: 80%;
+    top: 60px;
+    width: 70%;
     font-size: 54px !important;
     font-weight: 400;
     color: #fff !important;
-    margin: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
     font-family: Lora, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -110,6 +112,12 @@
   .xblock-render .affordable-housing.textimagexblock-wrapper .header-text {
     position: relative;
   }
+   
+  .xblock-render .affordable-housing.textimagexblock-wrapper .header-text {
+    width: auto;
+    top: 0;
+  }
+   
   .xblock-render .affordable-housing .textimagexblock-content {
     position: relative;
     left: 0;
