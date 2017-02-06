@@ -1,3 +1,26 @@
+<script>
+  function requestXBlock(url) {
+        parent.postMessage(JSON.stringify({action: 'skipToLinkedContent',
+                                            data: {
+                                            url: url}}),'*');
+  }
+  function highlightTabOnLinkHover(url) {
+    parent.postMessage(JSON.stringify({
+        action: 'setHoveredItem',
+        data: {
+            url: url
+        }
+    }), '*');
+  }
+  function unhighlightTabOnMouseOut(url) {
+    parent.postMessage(JSON.stringify({
+        action: 'removeHoveredItem',
+        data: {
+            url: url
+        }
+    }), '*');
+  }
+</script>
 <style>
   .xblock-render .background {
     width: auto !important;
@@ -128,7 +151,9 @@
     </h1>
     <div class="textimagexblock-content">
       <p class="content-text">
-        Founding members of Conservatorio saw a vast amount of <a href=#>potential</a> in the neighborhood prior to investing in the mid-2000s. However, there existed, and still exists, everyday challenges for <a href=#>community members</a> that inhibit proper access to amenities and services as well as employment opportunities. Development in the neighborhood threatens to exacerbate these challenges through the negative externalities associated with gentrification.
+        Founding members of Conservatorio saw a vast amount of <a href=# 
+onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@developers_eyes+block@36363b3dbe2a4708b5f8be495e4ac260')" onmouseover="highlightTabOnLinkHover('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@developers_eyes+block@36363b3dbe2a4708b5f8be495e4ac260')" onmouseout="unhighlightTabOnMouseOut('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@developers_eyes+block@36363b3dbe2a4708b5f8be495e4ac260')"> in the neighborhood prior to investing in the mid-2000s. However, there existed, and still exists, everyday challenges for <a href=#
+onClick="requestXBlock('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@community_eyes+block@564e136f80064258b6e4f5550671f6d9')" onmouseover="highlightTabOnLinkHover('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@community_eyes+block@564e136f80064258b6e4f5550671f6d9')" onmouseout="unhighlightTabOnMouseOut('http://54.83.196.116:8080/xblock/block-v1:edX+DemoX+Demo_Course+type@community_eyes+block@564e136f80064258b6e4f5550671f6d9')"> that inhibit proper access to amenities and services as well as employment opportunities. Development in the neighborhood threatens to exacerbate these challenges through the negative externalities associated with gentrification.
       </p>
     </div>
   </div>
