@@ -28,34 +28,33 @@
 
   .curation-businesses.textimagexblock-wrapper .background {
     height: 100%;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4em;
+    padding: 2em 4em;
+    position: relative;
   }
 
   .curation-businesses.textimagexblock-wrapper .textimagexblock-content {
-    position: fixed;
-    top: 25%;        
+    position: relative;
+    top: 5%;        
     padding: 0;
     height: 60%;
     width: 72%;
-    left: 11%;
     overflow: auto;
+	margin: 0 auto;
   }
 
   .curation-businesses.textimagexblock-wrapper .header-text {
-    position: fixed;
+    position: relative;
     top: 60px;
-    left: 11%;
-    width: 72%;
+    width: 70%;
     font-size: 54px !important;
-    font-size: 3.375rem;
     font-weight: 400;
     font-family: Lora, sans-serif;
-    color: white !important;
-    margin: 1em 0;              
-    padding-left: 20px;
+    color: #fff !important;           
+    margin: 20px auto;
+    padding: 0 20px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -72,10 +71,9 @@
   .curation-businesses.textimagexblock-wrapper .content-text {
     font-family: Hind, sans-serif;
     font-size: 16px !important;
-    font-size: 1rem !important;
     font-weight: 400;
     line-height: 28px;
-    color: white !important;
+    color: #fff !important;
     text-align: left;
     margin: 0;
     padding: 20px;
@@ -134,6 +132,10 @@
   .xblock-render .curation-businesses.textimagexblock-wrapper,
   .xblock-render .curation-businesses.textimagexblock-wrapper .header-text {
     position: relative;
+  }
+  .xblock-render .curation-businesses.textimagexblock-wrapper .header-text {
+    top: 0;
+    width: auto;
   }
   .xblock-render .curation-businesses .textimagexblock-content {
     position: relative;
