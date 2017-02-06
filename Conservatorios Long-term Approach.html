@@ -17,31 +17,33 @@
   }
   .textimagexblock-wrapper .background {
     height: 100%;
-    width: 100%;
+    width: auto;
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4em;
+    padding: 2em 4em;
   }
   .conservatorio-long.textimagexblock-wrapper .textimagexblock-content {
-    position: fixed;
-    top: 25%;
-    left: 14%;
+    position: relative;
+    top: 7%;
     padding: 0;
+    margin: 0 auto;
     height: 60%;
     width: 72%;
     overflow: auto;
   }
   .conservatorio-long.textimagexblock-wrapper .header-text {
-    font-size: 54px;
-    font-size: 3.375rem;
+    position: relative;
+    top: 60px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: 54px !important;
     font-weight: 400;
     font-family: Lora, sans-serif;
-    color: white !important;
-    margin: 1em 0;
-    padding: 0;
-    text-align: center;
+    color: #fff !important;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  	-moz-osx-font-smoothing: grayscale;
   }
   .textimagexblock-wrapper a {
     background-color: rgba(201,74,6,.7);
@@ -52,23 +54,23 @@
   }
   .conservatorio-long.textimagexblock-wrapper .content-text {
     font-family: Hind, sans-serif;
-    font-size: 16px;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 16px !important;
     line-height: 28px;
-    color: white !important;
+    color: #fff !important;
     text-align: left;
     margin: 0;
-    padding: 2em;
+    padding: 20px;
+    padding-bottom: 0;
+    white-space: normal;
   }
   .conservatorio-long.textimagexblock-wrapper ol {
     margin-left: 4em !important;
   }
   .conservatorio-long.textimagexblock-wrapper li {
-    font-family: sans;
-    font-size: 18px;
+    font-family: Hind, sans-serif;
+    font-size: 16px !important;
     line-height: 28px;
-    color: white;
+    color: #fff;
     text-align: left;
     padding: 0 2em 2em 0;
   }
@@ -91,6 +93,11 @@
   /* studio view adjustments */
   .xblock-render .conservatorio-long.textimagexblock-wrapper {
     position: relative;
+  }
+  .xblock-render .conservatorio-long.textimagexblock-wrapper .header-text {
+  	font-size: 54px;
+    top: 0;
+    width: auto;
   }
   .xblock-render .conservatorio-long .textimagexblock-content {
   	position: relative;
