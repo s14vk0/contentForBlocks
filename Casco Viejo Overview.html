@@ -64,7 +64,7 @@
 
   .casco-viejo.textimagexblock-wrapper .background {
     height: 100%;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2em 4em;
@@ -83,20 +83,21 @@
     position: relative;
     top: 5%;
     padding: 0;
+    margin: 0 auto;
     height: 60%;
     width: 72%;
-    left: 11%;
     overflow: auto;
   }
 
   .casco-viejo.textimagexblock-wrapper .header-text {
     position: relative;
-    width: 80%;
+    width: 70%;
     font-size: 54px !important;
     font-family: Lora, sans-serif;
     font-weight: 400;
     color: #fff !important;
-    margin: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -155,6 +156,12 @@
   .xblock-render .casco-viejo.textimagexblock-wrapper .header-text {
     position: relative;
   }
+  
+  .xblock-render .casco-viejo.textimagexblock-wrapper .header-text {
+  	top: 0;
+    width: auto;
+  }
+  
   .xblock-render .casco-viejo .textimagexblock-content {
     position: relative;
     left: 0;
