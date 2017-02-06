@@ -27,34 +27,33 @@
 
   .conservatorios-business-model.textimagexblock-wrapper .background {
     height: 100%;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4em;
+    padding: 2em 4em;
+    position: relative;
   }
 
   .conservatorios-business-model.textimagexblock-wrapper .textimagexblock-content {
-    position: fixed;
-    top: 25%;        
+    position: relative;
     padding: 0;
+    margin: 0 auto;
+    top: 5%;
     height: 60%;
     width: 72%;
-    left: 11%;
     overflow: auto;
   }
 
   .conservatorios-business-model.textimagexblock-wrapper .header-text {
-    position: fixed;
+    position: relative;
     top: 60px;
-    left: 11%;
-    width: 72%;
+    width: 70%;
     font-size: 54px !important;
-    font-size: 3.375rem !important;
     font-weight: 400;
     font-family: Lora, sans-serif;
-    color: white !important;
-    margin: 1em 0;              
-    padding-left: 20px;
+    color: #fff !important;
+    margin: 20px auto;
+    padding: 0 20px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -71,13 +70,12 @@
   .conservatorios-business-model.textimagexblock-wrapper .content-text {
     font-family: Hind, sans-serif;
     font-size: 16px !important;
-    font-size: 1rem !important;
     font-weight: 400;
     line-height: 28px;
-    color: white !important;
+    color: #fff !important;
     text-align: left;
     margin: 0;
-    padding: 20px;
+    padding: 20px !important;
     padding-bottom: 0;
   }
 
@@ -115,6 +113,10 @@
   .xblock-render .conservatorios-business-model.textimagexblock-wrapper .header-text {
     position: relative;
     font-size: 16px;
+  }
+  .xblock-render .conservatorios-business-model.textimagexblock-wrapper .header-text {
+    top: 0;
+    width: auto;
   }
   .xblock-render .conservatorios-business-model .textimagexblock-content {
     position: relative;
