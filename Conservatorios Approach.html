@@ -17,31 +17,33 @@
   }
   .conservatorio.textimagexblock-wrapper .background {
     height: 100%;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4em;
+    padding: 2em 4em;
+    position: relative;
   }
   .conservatorio.textimagexblock-wrapper .textimagexblock-content {
-    position: fixed;
-    top: 25%;
-    left: 14%;
+    position: relative;
+    top: 7%;
+    margin: 0 auto;
     padding: 0;
     height: 60%;
     width: 72%;
     overflow: auto;
   }
   .conservatorio.textimagexblock-wrapper .header-text {
-    font-size: 54px;
-    font-size: 3.375rem;
+    position: relative;
+    top: 60px;
+    width: 70%;
+    font-size: 54px !important;
     font-weight: 400;
     font-family: Lora, sans-serif;
-    color: white !important;
-    margin: 1em 0;
-    padding: 0;
-    text-align: center;
+    color: #fff !important;
+    margin: 20px auto;
+    padding: 0 20px;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  	-moz-osx-font-smoothing: grayscale;
   }
   
   .textimagexblock-wrapper a {
@@ -56,13 +58,14 @@
   .conservatorio.textimagexblock-wrapper .content-text {
     font-family: Hind, sans-serif;
     font-size: 16px;
-    font-size: 1rem;
     font-weight: 400;
     line-height: 28px;
-    color: white !important;
+    color: #fff !important;
     text-align: left;
     margin: 0;
-    padding: 2em;
+    padding: 20px;
+    padding-bottom: 0;
+    white-space: normal;
   }
   
   .conservatorio.textimagexblock-wrapper ol {
@@ -99,6 +102,12 @@
   /* studio view adjustments */
   .xblock-render .conservatorio .textimagexblock-wrapper {
     position: relative;
+  }
+  
+  .xblock-render .conservatorio.textimagexblock-wrapper .header-text {
+  	font-size: 40px;
+    width: auto;
+    top: 0;
   }
   
   .xblock-render .conservatorio .textimagexblock-content {
